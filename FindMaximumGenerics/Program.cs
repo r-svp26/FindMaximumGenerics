@@ -4,9 +4,13 @@ namespace FindMaximumGenerics
 {
     class Program
     {
+        /// <summary>
+        /// execution start from here!
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Find Maximum Programs.");
+            Maximum.GetMax(10,20,15); 
         }
     }
 }
