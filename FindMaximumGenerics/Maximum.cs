@@ -6,7 +6,13 @@ namespace FindMaximumGenerics
 {
     class Maximum
     {
-        public static void GetMax(int firstNumber, int secondNumber, int thirdNumber)
+        /// <summary>
+        /// get max value of floats numbers.
+        /// </summary>
+        /// <param name="firstNumber"></param>
+        /// <param name="secondNumber"></param>
+        /// <param name="thirdNumber"></param>
+        public static void GetMax(float firstNumber, float secondNumber, float thirdNumber)
         {
             //// used compareto method
             if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
