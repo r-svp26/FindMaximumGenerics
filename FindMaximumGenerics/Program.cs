@@ -10,7 +10,7 @@ namespace FindMaximumGenerics
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Maximum.GetMax(10.2f,20.1f,15.2f); 
+            Maximum.GetMax("Apple", "Peach", "Banana"); 
         }
     }
 }
