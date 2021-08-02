@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FindMaximumGenerics
 {
-    class Maximum
+    class Maximum<C> where C:IComparable
     {
         /// <summary>
         /// get max value using generics method.

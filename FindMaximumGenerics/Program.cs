@@ -11,11 +11,11 @@ namespace FindMaximumGenerics
         static void Main(string[] args)
         {
             Console.WriteLine("Max value among these three integer");
-            Maximum.GetMax(10,20,30);
+            Maximum<int>.GetMax(10,20,30);
             Console.WriteLine("Max value among these three floats");
-            Maximum.GetMax(10.2f, 35.1f, 30.5f);
+            Maximum<double>.GetMax(10.2f, 35.1f, 30.5f);
             Console.WriteLine("Max value among these three string");
-            Maximum.GetMax("Apple", "Peach", "Banana");
+            Maximum<string>.GetMax("Apple", "Peach", "Banana");
         }
     }
 }
