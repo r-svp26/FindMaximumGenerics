@@ -10,7 +10,12 @@ namespace FindMaximumGenerics
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Maximum.GetMax("Apple", "Peach", "Banana"); 
+            Console.WriteLine("Max value among these three integer");
+            Maximum.GetMax(10,20,30);
+            Console.WriteLine("Max value among these three floats");
+            Maximum.GetMax(10.2f, 35.1f, 30.5f);
+            Console.WriteLine("Max value among these three string");
+            Maximum.GetMax("Apple", "Peach", "Banana");
         }
     }
 }

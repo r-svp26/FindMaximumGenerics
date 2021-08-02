@@ -7,20 +7,20 @@ namespace FindMaximumGenerics
     class Maximum
     {
         /// <summary>
-        /// get max value of string character.
+        /// get max value using generics method.
         /// </summary>
-        /// <param name="firstWord"></param>
-        /// <param name="secondWord"></param>
-        /// <param name="thirdWord"></param>
-        public static void GetMax(string firstWord, string secondWord, string thirdWord)
+        /// <param name="firstValue"></param>
+        /// <param name="secondValue"></param>
+        /// <param name="thirdValue"></param>
+        public static void GetMax<T>(T firstValue, T secondValue, T thirdValue) where T : System.IComparable<T>
         {
             //// used compareto method
-            if (firstWord.CompareTo(secondWord) > 0 && firstWord.CompareTo(thirdWord) > 0)
-                Console.WriteLine(firstWord + ", Is the max string.");
-            if (secondWord.CompareTo(firstWord) > 0 && secondWord.CompareTo(thirdWord) > 0)
-                Console.WriteLine(secondWord + ", Is the max string.");
-            if (thirdWord.CompareTo(firstWord) > 0 && thirdWord.CompareTo(secondWord) > 0)
-                Console.WriteLine(thirdWord + ", Is the max string.");
+            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
+                Console.WriteLine(firstValue + ", Is the max value.");
+            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
+                Console.WriteLine(secondValue + ", Is the max value.");
+            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
+                Console.WriteLine(thirdValue + ", Is the max value.");
         }
     }
 }
