@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FindMaximumGenerics
 {
-    class Maximum<C> where C:IComparable
+    public class Maximum<T> where T:IComparable
     {
         /// <summary>
         /// get max value using generics method.
@@ -12,15 +12,16 @@ namespace FindMaximumGenerics
         /// <param name="firstValue"></param>
         /// <param name="secondValue"></param>
         /// <param name="thirdValue"></param>
-        public static void GetMax<T>(T firstValue, T secondValue, T thirdValue) where T : System.IComparable<T>
+        public static T GetMax<T>(T firstValue, T secondValue, T thirdValue) where T : System.IComparable<T>
         {
             //// used compareto method
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
-                Console.WriteLine(firstValue + ", Is the max value.");
+                return firstValue;
             if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
-                Console.WriteLine(secondValue + ", Is the max value.");
+                return secondValue;
             if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
-                Console.WriteLine(thirdValue + ", Is the max value.");
+                return thirdValue;
+            throw new Exception("Three values are equals");
         }
     }
 }
